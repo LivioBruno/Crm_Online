@@ -54,7 +54,10 @@ public class Email {
     }
     
     public int isSabado(){
-        return 0;
+        //Representa a data da atividade
+        Calendar diaAtividade = new GregorianCalendar(2012,11 - 1,17);
+        int diaSemana = diaAtividade.get(Calendar.DAY_OF_WEEK);
+        return diaSemana;
     }
 }
 
