@@ -1,6 +1,7 @@
 package Model;
 
 import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -50,6 +51,10 @@ public class Email {
         Calendar dataEsperada = Calendar.getInstance();
         dataEsperada.set(2012,11,17 , 11,00,00);
         return dataEsperada;
+    }
+    
+    public int isSabado(){
+        return 0;
     }
 }
 
