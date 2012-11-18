@@ -33,12 +33,21 @@ public class EnviaLembreteTest extends TestCase{
     }
     
     public void testIsSabado(){
-        
+
         //Representa a data da atividade
         Calendar dataAtividade = new GregorianCalendar(2012,11 - 1,17);      
         Email email = new Email();
         email.setDataAtual(dataAtividade);
         assertEquals(email.isSabado(), 7);
+    }
+    
+    public void testIsDomingo(){
+
+        //Representa a data da atividade
+        Calendar dataAtividade = new GregorianCalendar(2012,11 - 1,17);      
+        Email email = new Email();
+        email.setDataAtual(dataAtividade);
+        assertEquals(email.isDomingo(), 1);
     }
 }
 
