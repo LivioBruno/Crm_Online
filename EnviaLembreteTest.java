@@ -49,5 +49,17 @@ public class EnviaLembreteTest extends TestCase{
         email.setDataAtual(dataAtividade);
         assertEquals(email.isDomingo(), 1);
     }
+    
+    public void testEnviarLembreteDiaHoraEspecifico(){
+        
+        Calendar dataAtual    = Calendar.getInstance();
+        Email email           = new Email();
+        
+        //Representa a data e hora da atividade
+        dataAtual.set(2012,11,18 , 11,00,00);
+        
+        email.setDataAtual(dataAtual);
+        assertTrue(email.enviaDiaHoraEspecifica()== true);
+    }
 }
 
