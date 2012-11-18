@@ -64,6 +64,9 @@ public class Email {
     }
     
     public boolean enviaDiaHoraEspecifica(){
+        Calendar dataHoje = Calendar.getInstance();
+        if(dataAtual == dataHoje )
+            return true;
         return true;
     }
 }
