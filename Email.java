@@ -59,7 +59,8 @@ public class Email {
     }
     
     public int isDomingo(){
-        return 0;
+        int diaSemana = dataAtual.get(Calendar.DAY_OF_WEEK);
+        return diaSemana;
     }
 }
 
