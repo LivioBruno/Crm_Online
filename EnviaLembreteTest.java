@@ -8,6 +8,10 @@ import junit.framework.TestCase;
  */
 public class EnviaLembreteTest extends TestCase{
     
-    
+    public void testValidaEmail() throws Exception{
+        Email email = new Email();  
+        email.setNomeEmail("teste@hotmail.com");
+        assertTrue(email.validaEmail() == true);
+    }
 }
 
