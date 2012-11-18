@@ -56,7 +56,7 @@ public class EnviaLembreteTest extends TestCase{
         Email email           = new Email();
         
         //Representa a data e hora da atividade
-        dataAtual.set(2012,11,21 , 16,51,00);       
+        dataAtual.set(2012,11,18 , 16,59,00);       
         email.setDataAtual(dataAtual);
         assertTrue(email.enviaDiaHoraEspecifica()== true);
     }
