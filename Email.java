@@ -1,5 +1,6 @@
 package Model;
 
+import java.util.Calendar;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -10,11 +11,17 @@ import java.util.regex.Pattern;
 public class Email {
     
     private String nomeEmail;
+    private Calendar dataAtual = Calendar.getInstance();
 
+    public Calendar getDataAtual() {
+        return dataAtual;
+    }
+    public void setDataAtual(Calendar dataAtual) {
+        this.dataAtual = dataAtual;
+    }
     public String getNomeEmail() {
         return nomeEmail;
     }
-
     public void setNomeEmail(String nomeEmail) {
         this.nomeEmail = nomeEmail;
     }
@@ -33,6 +40,15 @@ public class Email {
         else{
           return false;
         }  
+    }
+    
+    /**
+     * Retorna data com um dia antes da data atual
+     * @return 
+     */
+    public Calendar enviaUmDiaAntes(){
+        Calendar dataEsperada = Calendar.getInstance();
+        return dataEsperada;
     }
 }
 
