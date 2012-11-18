@@ -44,7 +44,7 @@ public class EnviaLembreteTest extends TestCase{
     public void testIsDomingo(){
 
         //Representa a data da atividade
-        Calendar dataAtividade = new GregorianCalendar(2012,11 - 1,17);      
+        Calendar dataAtividade = new GregorianCalendar(2012,11 - 1,21);      
         Email email = new Email();
         email.setDataAtual(dataAtividade);
         assertEquals(email.isDomingo(), 1);
