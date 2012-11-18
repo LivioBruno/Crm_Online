@@ -1,6 +1,7 @@
 package TestClass;
 import Model.Email;
 import java.util.Calendar;
+import java.util.GregorianCalendar;
 import junit.framework.TestCase;
 
 /**
@@ -29,6 +30,18 @@ public class EnviaLembreteTest extends TestCase{
         
         email.setDataAtual(dataAtual);
         assertEquals(email.enviaUmDiaAntes(), dataEsperada);
+    }
+    
+    public void testIsSabado(){
+        
+        //Representa a data da atividade
+        Calendar dataAtividade = new GregorianCalendar(2012,11 - 1,17);      
+        //Recebe o dia da semana (1 = domingo, 2 = segunda,..., 7 = sabado)
+        int diaSemana = dataAtividade.get(Calendar.DAY_OF_WEEK);
+        
+        Email email = new Email();
+        email.setDataAtual(dataAtividade);
+        assertEquals(email.isSabado(), diaSemana);
     }
 }
 
