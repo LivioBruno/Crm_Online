@@ -48,6 +48,7 @@ public class Email {
      */
     public Calendar enviaUmDiaAntes(){
         Calendar dataEsperada = Calendar.getInstance();
+        dataEsperada.set(2012,11,19 , 11,00,00);
         return dataEsperada;
     }
 }
