@@ -1,4 +1,5 @@
 package TestClass;
+import Model.Email;
 import junit.framework.TestCase;
 
 /**
