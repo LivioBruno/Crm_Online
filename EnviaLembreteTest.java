@@ -11,7 +11,7 @@ public class EnviaLembreteTest extends TestCase{
     
     public void testValidaEmail() throws Exception{
         Email email = new Email();  
-        email.setNomeEmail("teste@hotmail.com");
+        email.setNomeEmail("testehotmail.com");
         assertTrue(email.validaEmail() == true);
     }
 }
