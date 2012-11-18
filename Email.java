@@ -48,9 +48,8 @@ public class Email {
      * @return 
      */
     public Calendar enviaUmDiaAntes(){
-        Calendar dataEsperada = Calendar.getInstance();
-        dataEsperada.set(2012,11,17 , 11,00,00);
-        return dataEsperada;
+        dataAtual.add(Calendar.DAY_OF_MONTH, -1);;
+        return dataAtual;
     }
     
     public int isSabado(){
