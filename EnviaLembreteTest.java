@@ -36,12 +36,9 @@ public class EnviaLembreteTest extends TestCase{
         
         //Representa a data da atividade
         Calendar dataAtividade = new GregorianCalendar(2012,11 - 1,17);      
-        //Recebe o dia da semana (1 = domingo, 2 = segunda,..., 7 = sabado)
-        int diaSemana = dataAtividade.get(Calendar.DAY_OF_WEEK);
-        
         Email email = new Email();
         email.setDataAtual(dataAtividade);
-        assertEquals(email.isSabado(), diaSemana);
+        assertEquals(email.isSabado(), 7);
     }
 }
 
