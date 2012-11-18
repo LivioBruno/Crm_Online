@@ -62,6 +62,10 @@ public class Email {
         int diaSemana = dataAtual.get(Calendar.DAY_OF_WEEK);
         return diaSemana;
     }
+    
+    public boolean enviaDiaHoraEspecifica(){
+        return true;
+    }
 }
 
 
